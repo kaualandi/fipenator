@@ -1,0 +1,12 @@
+.selects .button {
+    display: inline-block;
+}
+.selects .button+.button {
+    margin-left: 1rem;
+}
+h2#init [aria-expanded] svg {
+    transition: all .5s ease;
+}
+h2#init [aria-expanded="true"] svg {
+    transform: rotate(450deg);
+}

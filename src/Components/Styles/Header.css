@@ -1,0 +1,23 @@
+nav {
+    background: var(--bg-two);
+}
+nav .header-logo h1 {
+    margin: 0;
+}
+nav button {
+    border: 0;
+    padding: 0;
+    margin: 0;
+    background: none;
+}
+nav h1 img {
+    width: 3rem;
+    height: 3rem;
+}
+nav .icons .icon svg {
+    width: 1.4rem;
+    height: 1.4rem;
+}
+nav .icons .icon+.icon {
+    margin-left: 1rem;
+}

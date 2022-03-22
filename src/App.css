@@ -1,38 +1,119 @@
-.App {
-  text-align: center;
+:root {
+    --bg-one: #F7F7F7;
+    --bg-two: #ffffff;
+    --bg-obj: #7a94fd;
+    --primary: #191bc2;
+    --color: #09061A;
+    --box-shadow: 0 0 20px #252250;
+    --transition: .3s ease;
+    --border-radius: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html {
+    height: 100vh;
+}
+body, #root, .App {
+    height: 100%;
+}
+main {
+    height: calc(100% - 56px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+a {
+    transition: var(--transition);
+    color: var(--primary);
+}
+body {
+    background: var(--bg-one);
+}
+.button {
+    color: var(--bg-one);
+    padding: 0;
+    margin: 0;
+    border: none;
+    padding: .8em;
+    background-color: var(--primary);
+    border-radius: var(--border-radius);
+    text-decoration: none;
+    display: block;
+    width: fit-content;
+    margin: auto;
+    margin-top: 1em;
+    box-shadow: var(--box-shadow);
+    transition: .3s all ease;
+}
+.button:hover {
+    color: var(--bg-one);
+    box-shadow: none;
+    letter-spacing: 2px;
+}
+.btn-primary {
+    background: var(--primary);
+    box-shadow: var(--box-shadow);
+    border-color: var(--primary);
+}
+.hlt {
+    color: var(--primary);
+}
+.btn-primary:hover {
+    background: var(--bg-obj);
+    color: var(--color);
+}
+.icon {
+    transition: .3s all ease;
+}
+.icon:hover {
+    transform: scale(1.2);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+select, button.btn-form {
+    padding: .5em;
+    display: block;
+    margin: auto;
+    border: 1px solid #ccc;
+    border-radius: var(--border-radius);
+    background: var(--bg-two);
+    color: var(--color);
+    line-height: 1.5;
+    margin-top: .5rem;
+    transition: all .3s ease;
+}
+select:hover, button.btn-form:hover {
+    border: 1px solid var(--primary);
+    background: var(--bg-two);
+}
+button.btn-form {
+    padding: .5em 1rem;
+}
+select:focus, button.btn-form:focus {
+    outline: none;
+    border: 1px solid var(--primary);
+    color: var(--primary);
+}
+button.btn-form:focus {
+    letter-spacing: 2px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.finally ul li {
+    font-size: 1.2rem;
 }
 
-.App-link {
-  color: #61dafb;
+.credits {
+    font-size: 1rem;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 1rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.blobDownload {
+    width: 59.59px;
+    height: 59.59px;
+}
+.blobDownload button {
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
 }
